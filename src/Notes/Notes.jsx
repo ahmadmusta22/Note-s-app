@@ -58,15 +58,15 @@ function handleClose(){
   return (
     <>
 
-      <section >
+      <section className='overflow-hidden' >
 
 
 
 
-        <div class={`${modal ? "block" : "hidden"}  fixed top-0 right-0 left-0 bottom-0 flex justify-center items-center bg-gray-50 dark:bg-gray-800 `}>
+        <div class={`${modal ? "block" : "hidden"}  fixed top-0 right-0 left-0 bottom-0 flex justify-center items-center bg-gray-50 dark:bg-gray-800  `}>
           <div class="relative p-4 w-full max-w-2xl max-h-full">
             <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-              <form onSubmit={updateNoteFormik.handleSubmit} class="flex flex-col gap-4 items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+              <form onSubmit={updateNoteFormik.handleSubmit} class=" overflow-hidden  flex flex-col gap-4 items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
                 <input value={updateNoteFormik.values.title} onChange={updateNoteFormik.handleChange} onBlur={updateNoteFormik.handleBlur} type="text" name="title" id="title" className='class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"' placeholder='Note Title' />
                 {updateNoteFormik.errors.title && updateNoteFormik.touched.title ? <div class="p-2 my-1 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
 
@@ -93,8 +93,8 @@ function handleClose(){
 
         </div>
       </section>
-      <div className="w-1/2 p-4  ">
-        <div className=" p-4 m-2 rounded-md shadow-sm capitalize bg-gray-50 dark:bg-gray-800 ">
+      <div className="w-1/2 p-4 overflow-hidden  ">
+        <div className="  notes p-4 m-2 rounded-md shadow-sm capitalize bg-gray-50 dark:bg-gray-800 ">
           <h1 className='text-gray-600 font-bold text-2xl'>{noteTitle}</h1>
           <p className='my-5 text-gray-400 text-md '>{noteContent}</p>
           <div className='flex justify-end gap-2 '>

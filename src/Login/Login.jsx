@@ -65,7 +65,7 @@ export default function Login() {
 
   return (
     <>
-      <form onSubmit={logFormik.handleSubmit} class="max-w-md mx-auto  mt-36">
+      <form onSubmit={logFormik.handleSubmit} class="max-w-md mx-auto  mt-36 login">
         <div class="relative z-0 w-full mb-5 group">
           <input
             onBlur={logFormik.handleBlur}

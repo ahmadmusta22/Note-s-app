@@ -9,6 +9,27 @@
 
 
 
+@media (max-width: 600px) {
+.login{
+  padding: 30px;
+}
+
+.notes{
+ 
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+}
+
+
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .notes{
+ 
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+}
 
 /* a {
   font-weight: 500;

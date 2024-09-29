@@ -6,7 +6,7 @@ export default function Layout() {
   return (
     <>
     <Sidebar></Sidebar>
-    <div className='sm:ml-64'>
+    <div className='sm:ml-64 container'>
      <Outlet></Outlet>
     </div>
     </>

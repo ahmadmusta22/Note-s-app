@@ -64,7 +64,7 @@ export default function Register() {
 
   return (
     <>
-      <form onSubmit={regFormik.handleSubmit} class="max-w-md mx-auto  mt-36">
+      <form onSubmit={regFormik.handleSubmit} class=" login max-w-md mx-auto  mt-36">
         <div class="relative z-0 w-full mb-5 group">
           <input
             onBlur={regFormik.handleBlur}
