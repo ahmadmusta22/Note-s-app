@@ -4,11 +4,11 @@ import { Outlet } from 'react-router-dom'
 
 export default function Layout() {
   return (
-    <>
-    <Sidebar></Sidebar>
-    <div className='sm:ml-64 container'>
-     <Outlet></Outlet>
+    <div className="flex overflow-hidden w-full min-h-screen">
+      <Sidebar />
+      <div className="sm:ml-64 flex-1 w-full overflow-x-hidden">
+        <Outlet />
+      </div>
     </div>
-    </>
-  )
+  );
 }
